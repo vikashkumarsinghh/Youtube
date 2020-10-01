@@ -5,10 +5,10 @@
     <img src="https://github.com/vikashkumarsinghh/Youtube/blob/master/youtube.png" >
   </a>
 
-  <h3 align="center">Youtube Downloader Application</h3>
+  <h3 align="center">Youtube Video Downloader Application</h3>
 
   <p align="center">
-    A Simple Youtube Downloader
+    A Simple Youtube Video Downloader
     <br />
     
   </p>
@@ -16,7 +16,7 @@
 
 ## About The Project
 
-This application can be used to download youtube videos.
+This application can be used to download youtube videos to your Device.
 ## Technology Stack
 
 * [Python](https://www.python.org/)
