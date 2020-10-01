@@ -104,10 +104,10 @@ file = PhotoImage(file="youtube.png")
 headingIcon = Label(root, image=file)
 headingIcon.pack(side=TOP, pady=3)
 
-# url field
-urlField = Entry(root, font=font, justify=CENTER)
-urlField.pack(side=TOP, fill=X, padx=10)
-urlField.focus()
+# Url Field
+url_entry = Entry(root, justify=CENTER, bd=5, fg='red')
+url_entry.pack(side=TOP, fill=X, padx=10)
+url_entry.focus()
 
 # download button
 downloadBtn = Button(root, text="Download Video", font=font, relief='ridge', command=btnClicked)
