@@ -80,6 +80,7 @@ def btnClicked():
 # gui coding
 root = Tk()
 root.title("Youtube Downloader")
+root.iconbitmap("icon.ico")
 root.geometry("500x600")
 
 # switch
