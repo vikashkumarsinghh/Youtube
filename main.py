@@ -105,7 +105,7 @@ headingIcon = Label(root, image=file)
 headingIcon.pack(side=TOP, pady=3)
 
 # Url Field
-url_entry = Entry(root, justify=CENTER, bd=5, fg='green')
+url_entry = Entry(root, justify=CENTER, bd=5, fg='red')
 url_entry.pack(side=TOP, fill=X, padx=10)
 url_entry.focus()
 
