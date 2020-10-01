@@ -10,6 +10,20 @@ font = ('verdana', 20)
 original_font = ('Courier', 12)
 file_size = 0
 
+# switch function:
+def switch():
+    global btnState
+    if btnState:
+        btn.config(image=offImg, bg="#CECCBE", activebackground="#CECCBE")
+        root.config(bg="#CECCBE")
+        txt.config(text="Dark Mode: OFF", bg="#CECCBE")
+        btnState = False
+    else:
+        btn.config(image=onImg, bg="#2B2B2B", activebackground="#2B2B2B")
+        root.config(bg="#2B2B2B")
+        txt.config(text="Dark Mode: ON", bg="#2B2B2B")
+        btnState = True
+
 
 # on complete callback function
 def completeDownload(stream=None, file_path=None):
@@ -68,6 +82,21 @@ root = Tk()
 root.title("Youtube Downloader")
 root.geometry("500x600")
 
+# switch
+btnState = False
+
+# switch images:
+onImg = PhotoImage(file="onbutton.png")
+offImg = PhotoImage(file="offbutton.png")
+
+# Night Mode:
+txt = Label(root, text="Dark Mode: OFF", font="FixedSys 17", bg="#CECCBE", fg="green")
+txt.pack(side='bottom')
+
+# switch widget:
+btn = Button(root, text="OFF", borderwidth=0, command=switch, bg="#CECCBE", activebackground="#CECCBE", pady=1)
+btn.pack(side=BOTTOM, padx=10, pady=10)
+btn.config(image=offImg)
 
 # main icon section
 file = PhotoImage(file="youtube.png")
