@@ -26,7 +26,7 @@ This application can be used to download youtube videos to your Device.
 ## Local Installation
 
 1. Drop a ⭐ on the Github Repository. 
-2. Clone the Repo by going to your local Git Client and pushing in the command: 
+2. Clone the Repository by going to your local Git Client and pushing in the command: 
 
 ```sh
 git clone https://github.com/vikashkumarsinghh/Youtube.git
